@@ -3,16 +3,9 @@ SVN Distribution
 
 Description
 -------
-SVN Distribution is a tool used to merge content between SVN sources to a specifc SVN desitation.
-The source content can come from different repositories or the same (just different path). The 
-desitation can also be a different respository or the same (just different path). Which content is
-added to the destination is determined by an XML file residing at the base of the SVN sources.
-Content removed from these XML files will be automatically removed from the destination repository.
+SVN Distribution is a tool used to merge content between SVN sources to a specifc SVN destination. The source content can come from different repositories or the same (just different path). The destination can also be a different repository or the same. Which content is added to the destination is determined by an XML file residing at the base of the SVN sources.Content removed from these XML files will be automatically removed from the destination repository.
 
-The most likely scenario for using this tool would be for merging build-product (or artifact) content into
-one SVN source or repository after executing a automated build form different source code projects. 
-Adding or removing content can done by simply editing the XML file at the base of the sources; 
-this allows clear visability of what is being added and non-engineers to edit content.
+The most likely scenario for using this tool would be for merging build-product (or artifact) content into one SVN path or repository after executing a automated build form different source code projects. Adding or removing content can done by simply editing the XML file at the base of the sources; this allows for clear visibility of what is contributed and non-engineers to edit the content.
 
 Restrictions
 -------
@@ -38,12 +31,12 @@ SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
     <tr>
         <td>-d</td>
         <td>--destination</td>
-        <td>Desination path. Local Folder Path.</td>
+        <td>Desination path. Local folder path.</td>
     </tr>
     <tr>
         <td>-s</td>
         <td>--source</td>
-        <td>Source path(s), multiple sources can be given. Local Folder Path.</td>
+        <td>Source path(s), multiple sources can be given. Local folder path.</td>
     </tr>
     <tr>
         <td>-t</td>
