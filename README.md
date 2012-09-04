@@ -102,7 +102,7 @@ Source XML Format
         <td>dest='[destination path]';source='[source path]';</td>
         <td>Represents content. For transfering one source to a destination a source and dest attribute can be used within one content element. 
             For transfering multiple sources to one destination a content element with only a dest attribute can be used; it is then expected 
-            this element will contain other context elements that only have a source attribute.</td>
+            this element will contain other context elements that only have a source attribute. Destination folders must end with a '/' character</td>
     </tr>
 </table>
 
