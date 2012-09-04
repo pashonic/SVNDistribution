@@ -23,9 +23,8 @@ SVN Subversion 1.6+
 Usage
 -------
 SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
-
-Options:
--h, --help            show this help message and exit
+Options:<br>
+-h, --help              show this help message and exit
 -d DEST, --destination=DEST
                         Desination path.
 -s SOURCES, --source=SOURCES
