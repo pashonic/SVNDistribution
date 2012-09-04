@@ -84,6 +84,21 @@ Example Calls
     
 Source XML Format
 -------
+Tags:
+
+<table>
+    <tr>
+        <td><b>Element<b></td>
+        <td WIDTH="100"><b>Attributes<b></td>
+        <td><b>Description<b></td>
+    </tr>
+    <tr>
+        <td><include></include></td>
+        <td>tags='[name]'</td>
+        <td>Includes items with a specific tag name. Multiple tags can be given: tag='linux,windows'.<br> If a tag Attribute is not given children are processed by default</td>
+    </tr>
+</table>
+
 Example:
 ```
 <?xml version="1.0"?>
