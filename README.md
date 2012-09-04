@@ -9,14 +9,15 @@ The most likely scenario for using this tool would be for merging build-product 
 
 Restrictions
 -------
-Unix (Ubuntu, Fedora, etc.) or Cygwin. (Ask if you want to support Windows)
-Python 2.6 to 2.7
-SVN Subversion 1.6+
+ *  Unix (Ubuntu, Fedora, etc.) or Cygwin. (Ask if you want to support Windows)
+ *  Python 2.6 to 2.7
+ *  SVN Subversion 1.6+
 
 Usage
 -------
 SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
 
+Options:
 <table>
     <tr>
         <td><b>Short CMD<b></td>
@@ -77,7 +78,7 @@ Example Calls
     
 Source XML Format
 -------
-Tags:
+Element Types:
 
 <table>
     <tr>
