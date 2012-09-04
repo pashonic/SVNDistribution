@@ -95,7 +95,7 @@ Source XML Format
     <tr>
         <td>exclude</td>
         <td>tags='[name]'</td>
-        <td>Excludes items with a specific tag name. Same similar rules as include.</td>
+        <td>Excludes items with a specific tag name. Similar to include element but reversed behavior.</td>
     </tr>
     <tr>
         <td>content</td>
