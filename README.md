@@ -23,24 +23,25 @@ SVN Subversion 1.6+
 Usage
 -------
 SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
+
 Options:<br>
--h, --help              show this help message and exit
--d DEST, --destination=DEST
-                        Desination path.
--s SOURCES, --source=SOURCES
-                        Source path(s), multiple sources can be given.
-  -t TAGS, --tags=TAGS  XML tags of that define which content in source xml to
-                        include or exclude.
-  -x, --cleandest       Enable cleaning of desintiation before operations.
-                        This will revert changes and remove unversioned
-                        content.
-  -c, --commit          Enabled SVN commit of destination after changes are
-                        done
-  -r, --resettags       Resets Property Tags. This will force content. from
-                        different sources to be removed from destination.
-  -u USERNAME, --username=USERNAME
-                        SVN username used for SVN operations.
-  -p PASSWORD, --password=PASSWORD
-                        SVN passowrd used for SVN operations.
+-h, --help            show this help message and exit.<br>
+-d DEST, --destination=DEST<br>
+                      Desination path.<br>
+-s SOURCES, --source=SOURCES<br>
+                      Source path(s), multiple sources can be given.<br>
+-t TAGS, --tags=TAGS  XML tags of that define which content in source xml to<br>
+                      include or exclude.<br>
+-x, --cleandest       Enable cleaning of desintiation before operations.<br>
+                      This will revert changes and remove unversioned<br>
+                      content.<br>
+-c, --commit          Enabled SVN commit of destination after changes are<br>
+                      done<br>
+-r, --resettags       Resets Property Tags. This will force content. from<br>
+                      different sources to be removed from destination.<br>
+-u USERNAME, --username=USERNAME<br>
+                      SVN username used for SVN operations.<br>
+-p PASSWORD, --password=PASSWORD<br>
+                      SVN passowrd used for SVN operations.
 
 
