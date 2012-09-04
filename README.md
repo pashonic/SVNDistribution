@@ -25,10 +25,10 @@ Usage
 SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
 
 Options:
- -h, --help            show this help message and exit
-  -d DEST, --destination=DEST
+-h, --help            show this help message and exit
+-d DEST, --destination=DEST
                         Desination path.
-  -s SOURCES, --source=SOURCES
+-s SOURCES, --source=SOURCES
                         Source path(s), multiple sources can be given.
   -t TAGS, --tags=TAGS  XML tags of that define which content in source xml to
                         include or exclude.
