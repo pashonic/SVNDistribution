@@ -22,37 +22,57 @@ SVN Subversion 1.6+
 
 Usage
 -------
-
- 
-
 SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
+
 <table>
+    <tr>
+        <td><b>Short CMD<b></td>
+        <td><b>Long CMD<b></td>
+        <td><b>Description<b></td>
+    </tr>
     <tr>
         <td>-h</td>
         <td>--help</td>
         <td>show this help message and exit.</td>
     </tr>
+    <tr>
+        <td>-d</td>
+        <td>--destination</td>
+        <td>Desination path. Local Folder Path.</td>
+    </tr>
+    <tr>
+        <td>-s</td>
+        <td>--source</td>
+        <td>Source path(s), multiple sources can be given. Local Folder Path.</td>
+    </tr>
+    <tr>
+        <td>-t</td>
+        <td>--tags</td>
+        <td>XML tags of that define which content in source xml to include or exclude.</td>
+    </tr>
+    <tr>
+        <td>-x</td>
+        <td>--cleandest</td>
+        <td>Enable cleaning of desintiation before operations. This will revert changes and remove unversioned content.</td>
+    </tr>
+    <tr>
+        <td>-c</td>
+        <td>--commit</td>
+        <td>Enabled SVN commit of destination after changes are done.</td>
+    </tr>
+    <tr>
+        <td>-r</td>
+        <td>--resettags</td>
+        <td>Resets property tags. This will force content from different sources to be removed from destination.</td>
+    </tr>
+    <tr>
+        <td>-u</td>
+        <td>--username</td>
+        <td>SVN username used for SVN operations.</td>
+    </tr>
+    <tr>
+        <td>-p</td>
+        <td>--password</td>
+        <td>SVN passowrd used for SVN operations.</td>
+    </tr>
 </table>
-
-
-Options: 
--h, --help            show this help message and exit. 
--d DEST, --destination=DEST 
-                      Desination path. 
--s SOURCES, --source=SOURCES 
-                      Source path(s), multiple sources can be given. 
--t TAGS, --tags=TAGS  XML tags of that define which content in source xml to 
-                      include or exclude. 
--x, --cleandest       Enable cleaning of desintiation before operations. 
-                      This will revert changes and remove unversioned 
-                      content. 
--c, --commit          Enabled SVN commit of destination after changes are 
-                      done 
--r, --resettags       Resets Property Tags. This will force content. from 
-                      different sources to be removed from destination. 
--u USERNAME, --username=USERNAME 
-                      SVN username used for SVN operations. 
--p PASSWORD, --password=PASSWORD 
-                      SVN passowrd used for SVN operations.
-
-

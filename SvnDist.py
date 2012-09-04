@@ -32,10 +32,10 @@ ArgParse.add_option('-t', '--tags', action="append", dest='tags', help='XML tags
 ArgParse.add_option('-x', '--cleandest', action ='store_true', dest='cleanDest', help='Enable cleaning of desintiation before operations. ' +
                                                                                       'This will revert changes and remove unversioned content.')
 ArgParse.add_option('-c', '--commit', action='store_true', dest='commit', help='Enabled SVN commit of destination after changes are done')
-ArgParse.add_option('-r', '--resettags',action='store_true', dest='resettags', help='Resets Property Tags. This will force content.' +
+ArgParse.add_option('-r', '--resettags',action='store_true', dest='resettags', help='Resets property tags. This will force content.' +
                                                                                     ' from different sources to be removed from destination.')
 ArgParse.add_option('-u', '--username', dest='username', help='SVN username used for SVN operations.')
-ArgParse.add_option('-p', '--password', dest='password', help='SVN passowrd used for SVN operations.')
+ArgParse.add_option('-p', '--password', dest='password', help='SVN password used for SVN operations.')
 
 #
 # Script configuration variables.
