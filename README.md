@@ -27,7 +27,7 @@ SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
 <table>
     <tr>
         <td><b>Short CMD<b></td>
-        <td WIDTH="200"><b>Long CMD<b></td>
+        <td WIDTH="125"><b>Long CMD<b></td>
         <td><b>Description<b></td>
     </tr>
     <tr>
