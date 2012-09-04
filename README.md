@@ -72,8 +72,8 @@ SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
 </table>
 
 <b>Example Calls:</b>
- *  python dist/SvnDist.py -s source/ -d dist/ -c -x -r 
- *  python dist/SvnDist.py -s source1/ -s source2 -d dist/ -c -x
+ *  python SvnDist.py -s source/ -d dist/ -c -x -r 
+ *  python SvnDist.py -s source1/ -s source2 -d dist/ -c -x
     
 Source XML Format
 -------
