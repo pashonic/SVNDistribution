@@ -27,7 +27,7 @@ SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
 <table>
     <tr>
         <td><b>Short CMD<b></td>
-        <td WIDTH="125"><b>Long CMD<b></td>
+        <td WIDTH="100"><b>Long CMD<b></td>
         <td><b>Description<b></td>
     </tr>
     <tr>
@@ -76,3 +76,27 @@ SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
         <td>SVN passowrd used for SVN operations.</td>
     </tr>
 </table>
+
+Example Calls
+-------
+    python dist/SvnDist.py -s source/ -d dist/ -c -x -r 
+    python dist/SvnDist.py -s source1/ -s source2 -d dist/ -c -x
+    
+Source XML Format
+-------
+Example:
+
+<?xml version="1.0"?>
+<include>
+    <include tag="linux">
+        <content dest="linux/destinationFolder1/">
+            <content source="sourceFolder1/sourcefolder2/file1.jar"/>
+            <content source="sourceFolder2/sourcefolder2/file2.jar"/>
+            <content source="sourceFolder3/sourcefolder2/file3.jar"/>
+            <content source="sourceFolder4/sourcefolder2/*"/>
+        </content>
+    </include>
+    <exclude tag="linux">
+        <content dest="notlinux/newtfilename.txt" source="sourcefolder/textfile.txt"/>
+    </exclude>
+</include>
