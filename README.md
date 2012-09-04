@@ -27,7 +27,7 @@ SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
 <table>
     <tr>
         <td><b>Short CMD<b></td>
-        <td><b>Long CMD<b></td>
+        <td WIDTH="200"><b>Long CMD<b></td>
         <td><b>Description<b></td>
     </tr>
     <tr>
@@ -37,7 +37,7 @@ SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
     </tr>
     <tr>
         <td>-d</td>
-        <td width: auto;>--destination</td>
+        <td>--destination</td>
         <td>Desination path. Local Folder Path.</td>
     </tr>
     <tr>
