@@ -3,13 +3,13 @@ SVN Distribution
 
 Description
 -------
-SVN Distribution is a tool used to merge content between SVN sources to a specifc SVN destination. The source content can come from different repositories or the same (just different path). The destination can also be a different repository or the same. Which content is added to the destination is determined by an XML file residing at the base of the SVN sources.Content removed from these XML files will be automatically removed from the destination repository.
+SVN Distribution is a tool used to merge content between SVN sources to a specifc SVN destination. The source content can come from different repositories or the same (just different path). The destination can also be a different repository or the same. Which content is added to the destination is determined by an XML file residing at the base of the SVN sources. Content removed from these XML files will be automatically removed from the destination repository.
 
 The most likely scenario for using this tool would be for merging build-product (or artifact) content into one SVN path or repository after executing a automated build form different source code projects. Adding or removing content can done by simply editing the XML file at the base of the sources; this allows for clear visibility of what is contributed and non-engineers to edit the content.
 
 Restrictions
 -------
- *  Unix (Ubuntu, Fedora, etc.) or Cygwin. (Ask if you want to support Windows)
+ *  Unix (Ubuntu, Fedora, etc.) or Cygwin. (Let me know if you want Windows supported)
  *  Python 2.6 to 2.7
  *  SVN Subversion 1.6+
 
@@ -71,10 +71,9 @@ SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
     </tr>
 </table>
 
-Example Calls
--------
-    python dist/SvnDist.py -s source/ -d dist/ -c -x -r 
-    python dist/SvnDist.py -s source1/ -s source2 -d dist/ -c -x
+<b>Example Calls:</b>
+ *  python dist/SvnDist.py -s source/ -d dist/ -c -x -r 
+ *  python dist/SvnDist.py -s source1/ -s source2 -d dist/ -c -x
     
 Source XML Format
 -------

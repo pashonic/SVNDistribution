@@ -1,3 +1,4 @@
+#
 # SVN Distribution  Copyright (C) 2012  Aaron Greene
 #
 # This program is free software: you can redistribute it and/or modify
@@ -12,6 +13,9 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Visit https://github.com/pashonic/SVNDistribution for addtional documentation.
+#
 
 from optparse import OptionParser
 from xml.dom.minidom import parse, parseString
@@ -243,7 +247,7 @@ for sourcePath in SourcePaths:
         sys.exit('ERROR: Invalid source directory: {0}'.format(sourcePath))
 
     #
-    # Check for source xml file.
+    # Check for source XML file.
     #
 
     if not os.path.isfile(source['DistXmlPath']):
@@ -297,7 +301,7 @@ if Options.resettags:
 for source in Sources:
 
     #
-    # Process source xml, copy operations begin here.
+    # Process source XML, copy operations begin here.
     #
 
     xmlDom = parse(source['DistXmlPath'])
