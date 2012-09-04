@@ -43,12 +43,12 @@ Options:
                       SVN username used for SVN operations. 
 -p PASSWORD, --password=PASSWORD 
                       SVN passowrd used for SVN operations.
-{| border=1
- | Cell 1, row 1
- | Cell 2, row 1
- |-
- | Cell 1, row 2
- | Cell 2, row 2
- |}
+   {| border=1
+    | Cell 1, row 1
+    | Cell 2, row 1
+    |-
+    | Cell 1, row 2
+    | Cell 2, row 2
+    |}
 
 
