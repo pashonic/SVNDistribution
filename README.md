@@ -85,7 +85,7 @@ Example Calls
 Source XML Format
 -------
 Example:
-
+<code>
 <?xml version="1.0"?>
 <include>
     <include tag="linux">
@@ -100,3 +100,4 @@ Example:
         <content dest="notlinux/newtfilename.txt" source="sourcefolder/textfile.txt"/>
     </exclude>
 </include>
+</code>
