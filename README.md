@@ -27,7 +27,7 @@ SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
     <tr>
         <td>-h</td>
         <td>--help</td>
-        <td>show this help message and exit.</td>
+        <td>Show this help message and exit.</td>
     </tr>
     <tr>
         <td>-d</td>
