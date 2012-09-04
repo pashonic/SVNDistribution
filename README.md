@@ -22,8 +22,19 @@ SVN Subversion 1.6+
 
 Usage
 -------
-SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
+
  
+
+SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
+<table>
+    <tr>
+        <td>-h</td>
+        <td>--help</td>
+        <td>show this help message and exit.</td>
+    </tr>
+</table>
+
+
 Options: 
 -h, --help            show this help message and exit. 
 -d DEST, --destination=DEST 
@@ -43,12 +54,5 @@ Options:
                       SVN username used for SVN operations. 
 -p PASSWORD, --password=PASSWORD 
                       SVN passowrd used for SVN operations.
-   {| border=1
-    | Cell 1, row 1
-    | Cell 2, row 1
-    |-
-    | Cell 1, row 2
-    | Cell 2, row 2
-    |}
 
 
