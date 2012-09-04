@@ -17,7 +17,7 @@ Usage
 -------
 SvnDist.py -d Destination_Path -s Source_Path(s) [Options]
 
-Options:
+<b>Options:</b>
 <table>
     <tr>
         <td><b>Short CMD<b></td>
@@ -78,7 +78,7 @@ Example Calls
     
 Source XML Format
 -------
-Element Types:
+<b>Element Types:</b>
 
 <table>
     <tr>
@@ -107,7 +107,7 @@ Element Types:
     </tr>
 </table>
 
-Example:
+<b>Example:</b>
 ```
 <?xml version="1.0"?>
 <include>
