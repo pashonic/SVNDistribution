@@ -93,9 +93,21 @@ Tags:
         <td><b>Description<b></td>
     </tr>
     <tr>
-        <td><include></include></td>
+        <td>'''<include></include>'''</td>
         <td>tags='[name]'</td>
-        <td>Includes items with a specific tag name. Multiple tags can be given: tag='linux,windows'.<br> If a tag Attribute is not given children are processed by default</td>
+        <td>Includes items with a specific tag name. If valid, children will be processed. <br>Multiple tags can be given; example: tag='linux,windows'.<br> If a tag Attribute is not given children are processed by default</td>
+    </tr>
+    <tr>
+        <td>'''<exclude></exclude>'''</td>
+        <td>tags='[name]'</td>
+        <td>Excludes items with a specific tag name. Same similar rules as include.</td>
+    </tr>
+    <tr>
+        <td>'''<content></content>'''</td>
+        <td>dest='[destination path]';source='[source path]';</td>
+        <td>Represents content. For transfering one source to a destination a source and dest attribute can be used within one content element. 
+            For transfering multiple sources to one destination a content element with only a dest attribute can be used; it is then expected 
+            this element will contain other context elements that only have a source attribute</td>
     </tr>
 </table>
 
