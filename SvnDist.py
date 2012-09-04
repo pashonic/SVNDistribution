@@ -1,4 +1,4 @@
-# SvnDistribution  Copyright (C) 2012  Aaron Greene
+# SVN Distribution  Copyright (C) 2012  Aaron Greene
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -42,6 +42,7 @@ ArgParse.add_option('-p', '--password', dest='password', help='SVN passowrd used
 #
 
 PropTag = 'DistUrl'
+SourceXmlFileName = 'SvnDist.xml'
 
 #
 # Define helper functions.
@@ -134,7 +135,7 @@ def Copy(sourcePath, destPath):
     return copyOutPut
 
 #
-# Procces dist.xml file.
+# Procces source xml file.
 #
 
 def HandleXmlNode(node):
@@ -232,7 +233,7 @@ Tags = Options.tags if not (Options.tags == None) else []
 
 Sources = []
 for sourcePath in SourcePaths:
-    source = {'Path':sourcePath, 'DistXmlPath':os.path.join(sourcePath, 'dist.xml')}
+    source = {'Path':sourcePath, 'DistXmlPath':os.path.join(sourcePath, SourceXmlFileName)}
 
     #
     # Check source directory.
@@ -242,11 +243,11 @@ for sourcePath in SourcePaths:
         sys.exit('ERROR: Invalid source directory: {0}'.format(sourcePath))
 
     #
-    # Check for dist.xml file.
+    # Check for source xml file.
     #
 
     if not os.path.isfile(source['DistXmlPath']):
-        sys.exit('ERROR: No dist.xml found in source: {0}'.format(sourcePath))
+        sys.exit('ERROR: No source xml found in source: {0}'.format(sourcePath))
 
     #
     # Check SVN and capture revision.
